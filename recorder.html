@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <title>Выявление наличия COVID-19</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    #btns{
+      display: none;
+    }
+  </style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+  <!-- Main -->
+  <div id="main" class="wrapper style1">
+    <div class="container">
+      <header class="major">
+        <h2>Запись кашля</h2>
+        <p>Нажмите "Запись", покашляйте, нажмите "Стоп"</p>
+        <p>Вы можете прослушать и перезаписать ваш кашель, если понадобится. В таком случае на обработку отправится только последняя запись</p>
+      </header>
+
+      <!-- Content -->
+      <section id="content">
+        <div class="row gtr-uniform gtr-50">
+          <div class="col-12" id='gUMArea'>
+            <button class="button primary icon fit solid fa-microphone" id='gUMbtn'>Начать запись</button>
+          </div>
+          <div class="col-6 col-12-medium" id='btns'>
+            <ul class="actions fit">
+              <li><button  class="button primary icon fit solid fa-play" id='start'>Запись</button></li>
+              <li><button  class="button primary icon fit solid fa-stop" id='stop'>Стоп</button></li>
+            </ul>
+          </div>
+          <div class="col-6 col-12-medium">
+            <ol class="list-unstyled" id='ol'></ol>
+          </div>
+        </div>
+        <form method="post" action="results.html">
+          <div class="col-6 col-12-medium">
+            <input type="submit" value="Далее" class="primary" />
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/recorder/script.js"></script>
+
+</body>
+</html>

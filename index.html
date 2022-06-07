@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Выявление наличия COVID-19</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Анкета</h2>
+							<p>Необходимо заполнить все поля и записать звук кашля в конце</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<!-- Form -->
+								<section>
+									<h3>Основные данные</h3>
+									<form method="post" action="recorder.html">
+										<div class="row gtr-uniform gtr-50">
+											<div class="col-4 col-12-xsmall">
+												<input type="text" name="age" id="age" value="" placeholder="Возраст" />
+											</div>
+											<div class="col-4 col-12-xsmall">
+												<select name="sex" id="sex">
+													<option value="">- Укажите пол -</option>
+													<option value="0">Мужской</option>
+													<option value="1">Женский</option>
+												</select>
+											</div>
+											<div class="col-4 col-12-xsmall">
+												<select name="vacc" id="vacc">
+													<option value="">- Статус вакцинации -</option>
+													<option value="0">Не проходил</option>
+													<option value="1">1 доза</option>
+													<option value="2">2 дозы</option>
+												</select>
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="checkbox" id="mask" name="mask">
+												<label for="mask">Я ношу маску</label>
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="checkbox" id="smoke" name="smoke">
+												<label for="smoke">Я курю</label>
+											</div>
+
+											<div class="col-12">
+												<h3>Есть ли у вас следующие симптомы:</h3>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="cold" name="cold">
+												<label for="cold">Температура</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="cough" name="cough">
+												<label for="cough">Кашель</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="fever" name="fever">
+												<label for="fever">Лихорадка</label>
+											</div>
+
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="diarrhoea" name="diarrhoea">
+												<label for="diarrhoea">Диарея</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="sore" name="sore">
+												<label for="sore">Боль в горле</label>
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+
+											<div class="col-12">
+												<h3>Есть ли у вас следующие состояния:</h3>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="loss" name="loss">
+												<label for="loss">Потеря запаха или вкуса</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="muscle" name="muscle">
+												<label for="muscle">Мышечная боль</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="fatigue" name="fatigue">
+												<label for="fatigue">Усталость</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="breath" name="breath">
+												<label for="breath">Проблемы с дыханием</label>
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+
+											<div class="col-12">
+												<h3>Есть ли у вас следующие заболевания:</h3>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="pneumonia" name="pneumonia">
+												<label for="pneumonia">Пневмония</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="asthma" name="asthma">
+												<label for="asthma">Астма</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="lung" name="lung">
+												<label for="lung">Хронические легочные заболевания</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="others" name="others">
+												<label for="others">Другие легочные заболевания</label>
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+
+											<div class="col-12">
+												<h3>Имеются ли у вас следующие состояния:</h3>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="hyper" name="hyper">
+												<label for="hyper">Гипертония</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="heart" name="heart">
+												<label for="heart">Ишемическая болезнь сердца</label>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="checkbox" id="diabetes" name="diabetes">
+												<label for="diabetes">Диабет</label>
+											</div>
+
+											<div class="col-12">
+												<h3>Вы проходили тестирование на COVID-19?</h3>
+											</div>
+											<div class="col-6 col-12-medium">
+												<select name="test" id="test">
+													<option value="0">Не проходил</option>
+													<option value="1">Последний тест - положительный</option>
+													<option value="2">Последний тест - отрицательный</option>
+													<option value="3">Да, жду результатов</option>
+												</select>
+											</div>
+											<div class="col-6 col-12-medium">
+											</div>
+
+											<div class="col-12">
+												<h3>Тип тестирования (если имеется):</h3>
+											</div>
+											<div class="col-6 col-12-medium">
+												<select name="type" id="type">
+													<option value="0">- Нет -</option>
+													<option value="1">RT-PCR</option>
+													<option value="2">RAT</option>
+												</select>
+											</div>
+											<div class="col-6 col-12-medium">
+											</div>
+
+											<div class="col-12">
+												<h3>Вы проходили КТ-сканирование?</h3>
+											</div>
+											<div class="col-6 col-12-medium">
+												<select name="type" id="ct">
+													<option value="0">Нет</option>
+													<option value="1">Да</option>
+												</select>
+											</div>
+											<div class="col-4 col-12-medium">
+												<input type="text" name="score" id="score" value="0.0" placeholder="Результат сканирования" />
+											</div>
+											<div class="col-4 col-12-medium">
+											</div>
+
+											<h3>Перейти к записи звука кашля</h3>
+											<p>Убедитесь, что ваш микрофон включен</p>
+
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Далее" class="primary" /></li>
+													<li><input type="reset" value="Сбросить" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+							</section>
+
+					</div>
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
